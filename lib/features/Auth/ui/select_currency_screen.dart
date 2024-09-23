@@ -75,22 +75,16 @@ class _SelectCurrencyScreenState extends State<SelectCurrencyScreen> {
                       style: AppTextStyle.mulishF16W600,
                     ),
                     SizedBox(height: 23.h,),
-                    Material(
-                      shape: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10.r),
-                          borderSide: const BorderSide(color: AppColors.primary)
-                      ),
-                      color: Colors.transparent,
-                      child: AppDropDownMenu(
-                        textStyle: AppTextStyle.mulishF18W800,
-                          initialSelection: "\$ - United States Dollar",
-                          dropDownMenuEntries: const [
-                            DropdownMenuEntry(
-                                value: "\$ - United States Dollar",
-                                label: "\$ - United States Dollar",
-                            )
-                          ],
-                      ),
+                    AppDropDownMenu(
+                      showRedBorder: true,
+                      textStyle: AppTextStyle.mulishF18W800,
+                        initialSelection: "\$ - United States Dollar",
+                        dropDownMenuEntries: const [
+                          DropdownMenuEntry(
+                              value: "\$ - United States Dollar",
+                              label: "\$ - United States Dollar",
+                          )
+                        ],
                     ),
                   ],
                 ),
